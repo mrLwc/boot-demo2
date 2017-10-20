@@ -1,0 +1,32 @@
+body {
+    margin-top: 50px;
+}
+
+#derg {
+    padding: 20px 0;
+}
+
+
+/* 精度条 */
+
+.progress {
+    margin-bottom: 12px;
+}
+
+
+/* 留言板头像 */
+
+.wh64 {
+    height: 64px;
+    width: 64px;
+}
+
+.mar_t15 {
+    margin-top: 15px;
+}
+
+footer {
+    font-weight: 400;
+    text-align: center;
+    padding: 20px;
+}
