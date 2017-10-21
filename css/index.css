@@ -25,8 +25,47 @@ body {
     margin-top: 15px;
 }
 
+#main {
+    padding-top: 15px;
+}
+
+#main .page-header {
+    margin-top: 0;
+}
+
+.container h1 {
+    font-size: 14px;
+    margin: 0;
+}
+
 footer {
     font-weight: 400;
     text-align: center;
     padding: 20px;
+}
+
+#main form {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+#main .alert {
+    padding: 10px;
+}
+
+.container .table {
+    margin-top: 20px;
+}
+
+.pad0 {
+    padding: 0;
+}
+
+.alertlist {
+    padding-top: 15px;
+}
+
+.alertlist .alert {
+    margin: 0 10px 0 0;
 }

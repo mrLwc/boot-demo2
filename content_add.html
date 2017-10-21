@@ -15,7 +15,6 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
 
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -26,6 +25,8 @@
 
 <body>
     <!-- 导航 -->
+
+
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="container">
@@ -61,44 +62,59 @@
                 <ul class="nav navbar-nav">
                     <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;后台首页</a></li>
                     <li><a href="user_list.html"><span class="glyphicon glyphicon-user"></span>&nbsp;用户管理</a></li>
-                    <li><a href="content.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;内容管理</a></li>
-                    <li class="active"><a href="tag.html"><span class="glyphicon glyphicon-tags"></span>&nbsp;标签管理</a></li>
+                    <li class="active"><a href="content.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;内容管理</a></li>
+                    <li><a href="tag.html"><span class="glyphicon glyphicon-tags"></span>&nbsp;标签管理</a></li>
                 </ul>
             </div>
         </div>
         <!-- /.navbar-collapse -->
     </nav>
-    <div class="container">
-        <div class="page-header">
-            <h1>管理标签</h1>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="col-md-10 pad0">
-                    <input type="text" class="form-control">
-                </div>
-                <div class="col-md-2">
-                    <button class="btn btn-default">提交</button>
-                </div>
-            </div>
-            <div class="col-md-12 alertlist">
-                <div class="alert alert-success alert-dismissible pull-left" role="alert">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <strong>BootScrap</strong>
-                </div>
-                <div class="alert alert-success alert-dismissible pull-left" role="alert">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <strong>BootScrap</strong>
-                </div>
-                <div class="alert alert-success alert-dismissible pull-left" role="alert">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <strong>BootScrap</strong>
-                </div>
-            </div>
-        </div>
 
-    </div>
-    <!-- footer -->
+    <section id="main">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-2">
+                    <div class="list-group">
+                        <a href="content.html" class="list-group-item">管理文章</a>
+                        <a href="javascript:;" class="list-group-item active">添加文章</a>
+
+                    </div>
+                </div>
+
+                <div class="col-md-10">
+                    <div class="page-header">
+                        <h1>添加内容</h1>
+                    </div>
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="javascript:;">添加</a>
+                        </li>
+                    </ul>
+                    <form action="#" role="form">
+                        <div class="form-group">
+                            <label for="BTname">标题</label>
+                            <input type="text" placeholder="请输入文章标题" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="Text">文章内容</label>
+                            <textarea rows="15" cols="10" placeholder="请输入正文部分" id="Text" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="check">全局顶置</label>
+                            <input type="checkbox" id="check">
+                            <button class="btn btn-default pull-right" type="submit">发布文章</button>
+                        </div>
+                    </form>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
     <footer>
         <div class="container">
             <div class="row">
@@ -110,7 +126,7 @@
             </div>
         </div>
     </footer>
-
+    <!--footer-->
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
